@@ -7,7 +7,7 @@ import os
 load_dotenv()  # .envファイルから環境変数を読み込む
 
 #.envでAPIキーを設定
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = st.secrets["openai"]["_api_key"]
 
 # 直接OpenAIのAPIキーを設定
 #openai.api_key = ""
