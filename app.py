@@ -54,7 +54,7 @@ def chat_with_character(user_input, character_info):
 # Streamlitアプリのタイトル
 st.title('なんかちいさくてかわいいっぽい チャットボット')
 #アプリのタイトル画像
-st.image("images/IMG_4071.jpg")
+st.image("IMG_4071.jpg")
 
 
 # 会話履歴を保存するためのセッション状態の初期化
@@ -150,46 +150,46 @@ def get_emotion(text):
 # キャラクターごとに異なる感情の画像パスをマッピング
 character_emotion_images = {
     "ハチワレっぽいAI": {
-        "Happy": "images/ハチワレ表情/ハチワレ表情楽しみ.jpg",
-        "Angry": "images/ハチワレ表情/ハチワレ表情怒り.jpg",
-        "Sad": "images/ハチワレ表情/ハチワレ表情悲しみ.jpg",
-        "Default": "images/ハチワレ表情/ハチワレ表情喜び.jpg",
-        "POSITIVE":"images/ハチワレ表情/ハチワレ表情楽しみ.jpg",
-        "NEGATIVE":"images/ハチワレ表情/ハチワレ表情悲しみ.jpg",
-        "NEUTRAL":"images/ハチワレ表情/ハチワレ表情喜び.jpg",
+        "Happy": "ハチワレ表情/ハチワレ表情楽しみ.jpg",
+        "Angry": "ハチワレ表情/ハチワレ表情怒り.jpg",
+        "Sad": "ハチワレ表情/ハチワレ表情悲しみ.jpg",
+        "Default": "ハチワレ表情/ハチワレ表情喜び.jpg",
+        "POSITIVE":"ハチワレ表情/ハチワレ表情楽しみ.jpg",
+        "NEGATIVE":"ハチワレ表情/ハチワレ表情悲しみ.jpg",
+        "NEUTRAL":"ハチワレ表情/ハチワレ表情喜び.jpg",
         # その他の感情に対する画像パス...        
     },
     "ちいかわっぽいAI": {
-        "Happy": "images/ちいかわ表情/ちいかわ表情楽しみ.jpg",
-        "Angry": "images/ちいかわ表情/ちいかわ表情怒り.jpg",
-        "Sad": "images/ちいかわ表情/ちいかわ表情悲しみ.jpg",
-        "Default": "images/ちいかわ表情/ちいかわ表情喜び.jpg",
-        "POSITIVE":"images/ちいかわ表情/ちいかわ表情楽しみ.jpg",
-        "NEGATIVE":"images/ちいかわ表情/ちいかわ表情悲しみ.jpg",
-        "NEUTRAL":"images/ちいかわ表情/ちいかわ表情喜び.jpg",
+        "Happy": "ちいかわ表情/ちいかわ表情楽しみ.jpg",
+        "Angry": "ちいかわ表情/ちいかわ表情怒り.jpg",
+        "Sad": "ちいかわ表情/ちいかわ表情悲しみ.jpg",
+        "Default": "ちいかわ表情/ちいかわ表情喜び.jpg",
+        "POSITIVE":"ちいかわ表情/ちいかわ表情楽しみ.jpg",
+        "NEGATIVE":"ちいかわ表情/ちいかわ表情悲しみ.jpg",
+        "NEUTRAL":"ちいかわ表情/ちいかわ表情喜び.jpg",
         # その他の感情に対する画像パス...
     },
     # 他のキャラクターに対するマッピング...
 
     "うさぎっぽいAI": {
-        "Happy": "images/うさぎ表情/うさぎ表情楽しみ.jpg",
-        "Angry": "images/うさぎ表情/うさぎ表情怒り.jpg",
-        "Sad": "images/うさぎ表情/うさぎ表情悲しみ.jpg",
-        "Default": "images/うさぎ表情/うさぎ表情喜び.jpg",
-        "POSITIVE":"images/うさぎ表情/うさぎ表情楽しみ.jpg",
-        "NEGATIVE":"images/うさぎ表情/うさぎ表情悲しみ.jpg",
-        "NEUTRAL":"images/うさぎ表情/うさぎ表情喜び.jpg",
+        "Happy": "うさぎ表情/うさぎ表情楽しみ.jpg",
+        "Angry": "うさぎ表情/うさぎ表情怒り.jpg",
+        "Sad": "うさぎ表情/うさぎ表情悲しみ.jpg",
+        "Default": "うさぎ表情/うさぎ表情喜び.jpg",
+        "POSITIVE":"うさぎ表情/うさぎ表情楽しみ.jpg",
+        "NEGATIVE":"うさぎ表情/うさぎ表情悲しみ.jpg",
+        "NEUTRAL":"うさぎ表情/うさぎ表情喜び.jpg",
         # その他の感情に対する画像パス...
     },
 
     "モモンガっぽいAI": {
-        "Happy": "images/モモンガ表情/モモンガ表情怒り.PNG",
-        "Angry": "images/モモンガ表情/モモンガ表情怒り.PNG",
-        "Sad": "images/モモンガ表情/モモンガ表情怒り.PNG",
-        "Default": "images/モモンガ表情/モモンガ表情怒り.PNG",
-        'POSITIVE':"images/モモンガ表情/モモンガ表情怒り.PNG",
-        'NEGATIVE':"images/モモンガ表情/モモンガ表情怒り.PNG",
-        'NEUTRAL':"images/モモンガ表情/モモンガ表情怒り.PNG",
+        "Happy": "モモンガ表情/モモンガ表情怒り.PNG",
+        "Angry": "モモンガ表情/モモンガ表情怒り.PNG",
+        "Sad": "モモンガ表情/モモンガ表情怒り.PNG",
+        "Default": "モモンガ表情/モモンガ表情怒り.PNG",
+        'POSITIVE':"モモンガ表情/モモンガ表情怒り.PNG",
+        'NEGATIVE':"モモンガ表情/モモンガ表情怒り.PNG",
+        'NEUTRAL':"モモンガ表情/モモンガ表情怒り.PNG",
         # その他の感情に対する画像パス...
     },
 }
