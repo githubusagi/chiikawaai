@@ -4,5 +4,6 @@ python-dotenv
 transformers
 torch
 TensorFlow
+tf-keras
 
 #pip install -r requirements.txt
